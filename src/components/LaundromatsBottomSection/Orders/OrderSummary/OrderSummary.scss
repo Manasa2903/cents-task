@@ -1,0 +1,33 @@
+.order-summary-container {
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+    align-items: center;
+    border-radius: 15px;
+    height: 95px;
+    .order-summary-heading {
+        font-size: 26px;
+        font-weight: normal;
+        font-family: sans-serif;
+    }
+    .order-values {
+        display: flex;
+        margin-left: 15px;
+        align-items: center;
+        .total-order-value {
+            color: #3790f4;
+            font-size: 40px;
+            font-weight: bold;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-family: sans-serif;
+        }
+        .total-orders-label {
+            width: 120px;
+            font-size: 15px;
+            font-family: sans-serif;
+            text-align: left;
+        }
+    }
+}

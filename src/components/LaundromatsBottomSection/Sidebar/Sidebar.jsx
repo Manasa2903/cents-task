@@ -2,7 +2,7 @@ import { BsBasket, BsPerson, BsNewspaper } from "react-icons/bs";
 import { GiWashingMachine } from "react-icons/gi";
 //import { BsPerson } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import "./Sidebar.css";
+import "./Sidebar.scss";
 
 const Sidebar = () => {
   return (

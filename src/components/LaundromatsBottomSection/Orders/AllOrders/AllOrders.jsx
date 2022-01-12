@@ -1,5 +1,5 @@
 import { BsDownload, BsSearch } from "react-icons/bs";
-import "./AllOrders.css";
+import "./AllOrders.scss";
 
 const AllOrders = () => {
   return (

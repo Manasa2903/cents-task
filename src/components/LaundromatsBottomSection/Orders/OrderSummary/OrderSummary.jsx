@@ -1,4 +1,4 @@
-import "./OrderSummary.css";
+import "./OrderSummary.scss";
 
 const OrderSummary = () => {
   return (

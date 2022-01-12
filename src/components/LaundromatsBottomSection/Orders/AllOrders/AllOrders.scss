@@ -1,0 +1,77 @@
+.all-orders-container {
+    margin: 15px;
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    width: 50%;
+    .all-orders-header {
+        padding-left: 25px;
+        padding-right: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgba(127, 127, 127, 0.5);
+        .all-orders-heading {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .all-orders-download-icon {
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+    .all-orders-controls-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 25px;
+        padding-right: 25px;
+        .all-orders-status-tabs {
+            display: flex;
+            .all-orders-tab-active {
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+                box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+                background-color: #3790f4;
+                padding: 10px;
+                width: 70px;
+                cursor: pointer;
+                color: white;
+            }
+            .all-orders-tab {
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+                box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+                padding: 10px;
+                width: 70px;
+                cursor: pointer;
+            }
+        }
+        .all-orders-search-icon {
+            font-size: 18px;
+            cursor: pointer;
+            color: #8d8c8c;
+        }
+    }
+    .all-orders-total-container {
+        list-style-type: none;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 300px;
+        overflow-y: auto;
+        .all-orders-item-container {
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 1px solid rgba(127, 127, 127, 0.5);
+            margin-bottom: 10px;
+            div {
+                .all-orders-amount-datetime {
+                    color: #7b7b7b;
+                    font-size: 14px;
+                    font-weight: 400;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}
