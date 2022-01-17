@@ -1,7 +1,6 @@
 import { BsThreeDots, BsCurrencyDollar } from "react-icons/bs";
 import { RiScales2Line, RiKey2Line } from "react-icons/ri";
 import { HiOutlineClock } from "react-icons/hi";
-import "./EachOrderInformation.scss";
 
 const EachOrderInformation = () => {
   return (

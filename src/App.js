@@ -1,4 +1,4 @@
-import "./App.css";
+import "./global.scss";
 import Navbar from "./components/Navbar/Navbar";
 import LaundromatsBottomSection from "./components/LaundromatsBottomSection/LaundromatsBottomSection";
 import { BrowserRouter } from "react-router-dom";

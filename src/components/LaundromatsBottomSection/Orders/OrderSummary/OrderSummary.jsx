@@ -1,5 +1,3 @@
-import "./OrderSummary.scss";
-
 const OrderSummary = () => {
   return (
     <div className="order-summary-container">

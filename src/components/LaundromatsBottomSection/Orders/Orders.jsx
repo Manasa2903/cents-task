@@ -1,5 +1,4 @@
 import OrderSummary from "../Orders/OrderSummary/OrderSummary";
-import "./Orders.scss";
 import AllOrders from "./AllOrders/AllOrders";
 import EachOrderInformation from "./EachOrderInformation/EachOrderInformation";
 

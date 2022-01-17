@@ -2,7 +2,6 @@ import { FaRegUserCircle } from "react-icons/fa";
 import { FiSettings } from "react-icons/fi";
 import { AiOutlineShop } from "react-icons/ai";
 import { GiClothesline } from "react-icons/gi";
-import "./Navbar.scss";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
