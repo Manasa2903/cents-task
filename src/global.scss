@@ -1,3 +1,6 @@
+//Commons
+@import "./components/Commons/InputField/input-field.scss";
+//Components
 @import "./components/Navbar/navbar.scss";
 @import "./components/LaundromatsBottomSection/laundromats-bottom-section.scss";
 @import "./components/LaundromatsBottomSection/Orders/orders.scss";
@@ -5,3 +8,7 @@
 @import "./components/LaundromatsBottomSection/Orders/EachOrderInformation/each-order-information.scss";
 @import "./components/LaundromatsBottomSection/Orders/OrderSummary/order-summary.scss";
 @import "./components/LaundromatsBottomSection/Sidebar/sidebar.scss";
+@import "./components/Admin/AdminSidebar/admin-sidebar.scss";
+@import "./components/Admin/admin.scss";
+@import "./components/Admin/Account/DoubleSidebar/DoubleSidebar.scss";
+@import "./components/Admin/Account/Details/Details.scss";

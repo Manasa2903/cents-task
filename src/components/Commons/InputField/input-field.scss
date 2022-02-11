@@ -1,0 +1,23 @@
+.input-field {
+    padding-top: 10px;
+    .input-label {
+        font-size: 16px;
+        font-family: sans-serif;
+        color: #7b7b7b;
+        margin-left: 15px;
+        margin-bottom: 5px;
+    }
+    .input {
+        border: 1px solid transparent;
+        width: 200px;
+        height: 30px;
+        padding-left: 5px;
+        margin-left: 10px;
+        font-size: 14px;
+        font-family: sans-serif;
+        color: black;
+    }
+    .input:hover {
+        border: 1px solid #7b7b7b;
+    }
+}

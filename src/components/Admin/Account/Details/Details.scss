@@ -1,0 +1,25 @@
+.account-details-container {
+    display: flex;
+    height: 90vh;
+    width: 600px;
+    .account-details-right-section {
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        .account-details {
+            display: flex;
+            .account-details-icon {
+                font-size: 30px;
+                padding-top: 30px;
+                margin-left: 15px;
+            }
+            .account-details-input-fields {
+                margin-top: 20px;
+                .input-container {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
