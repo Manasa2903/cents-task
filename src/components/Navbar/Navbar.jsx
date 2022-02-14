@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-left-container">
-        <Link to="/admin/account" className="navbar-link-container">
+        <Link to="/admin" className="navbar-link-container">
           <FiSettings className="navbar-settings-icon" />
           <h4>Admin</h4>
         </Link>

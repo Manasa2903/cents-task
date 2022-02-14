@@ -1,5 +1,6 @@
 //Commons
 @import "./components/Commons/InputField/input-field.scss";
+@import "./components/Commons/css/react-toggle.css";
 //Components
 @import "./components/Navbar/navbar.scss";
 @import "./components/LaundromatsBottomSection/laundromats-bottom-section.scss";
@@ -8,7 +9,9 @@
 @import "./components/LaundromatsBottomSection/Orders/EachOrderInformation/each-order-information.scss";
 @import "./components/LaundromatsBottomSection/Orders/OrderSummary/order-summary.scss";
 @import "./components/LaundromatsBottomSection/Sidebar/sidebar.scss";
-@import "./components/Admin/AdminSidebar/admin-sidebar.scss";
-@import "./components/Admin/admin.scss";
+@import "./components/Admin/LeftNav/left-nav.scss";
+@import "./components/Admin/right-nav.scss";
 @import "./components/Admin/Account/DoubleSidebar/DoubleSidebar.scss";
 @import "./components/Admin/Account/Details/Details.scss";
+@import "./components/Admin/Account/Payments/payments.scss";
+@import "./components/Admin/Account/Regions/Regions.scss";

@@ -24,10 +24,13 @@
             font-family: sans-serif;
             font-size: 15px;
             color: #7b7b7b;
-            width: 100%;
-            padding-top: 5px;
-            padding-bottom: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
             margin-bottom: 10px;
+            padding-left: 35px;
+        }
+        .right-nav-item-name:hover {
+            color: black;
         }
     }
 }

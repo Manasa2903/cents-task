@@ -1,22 +1,34 @@
 import "./global.scss";
 import Navbar from "./components/Navbar/Navbar";
 import LaundromatsBottomSection from "./components/LaundromatsBottomSection/LaundromatsBottomSection";
-import Admin from "./components/Admin/Admin";
+import RightNav from "./components/Admin/RightNav";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Details from "./components/Admin/Account/Details/Details";
+import Payments from "./components/Admin/Account/Payments/Payments";
+import LeftNav from "./components/Admin/LeftNav/LeftNav";
+import store from "./store.js";
+import { Provider } from "react-redux";
+import Regions from "./components/Admin/Account/Regions/Regions";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Navbar />
-        {/* <LaundromatsBottomSection /> */}
-        <Routes>
-          <Route path="/" element={<LaundromatsBottomSection />} />
-          <Route path="/admin/account" element={<Admin />} />
-          <Route path="/admin/account/details" element={<Details />} />
-        </Routes>
-      </BrowserRouter>
+      <Provider store={store}>
+        <BrowserRouter>
+          <Navbar />
+          {/* <LaundromatsBottomSection /> */}
+          <Routes>
+            <Route path="/" element={<LaundromatsBottomSection />} />
+            <Route path="/admin" element={<LeftNav />}>
+              <Route path="account" element={<RightNav />}>
+                <Route path="details" element={<Details />} />
+                <Route path="payments" element={<Payments />} />
+                <Route path="regions" element={<Regions />} />
+              </Route>
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </Provider>
     </div>
   );
 }

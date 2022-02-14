@@ -1,0 +1,34 @@
+.payments-container {
+    display: flex;
+    margin-left: 25px;
+    margin-top: 35px;
+    height: 50px;
+    align-items: center;
+    width: 100%;
+    .payments-paragraph {
+        font-weight: bold;
+        font-size: 16px;
+        font-family: sans-serif;
+    }
+    .payments-icon {
+        font-size: 25px;
+        margin-right: 10px;
+    }
+}
+
+.payments-bank-details-container {
+    display: flex;
+    margin-left: 55px;
+    height: 50px;
+    align-items: center;
+    width: 100%;
+    .payments-bank-name {
+        font-size: 14px;
+        font-family: sans-serif;
+    }
+    .payments-status-icon {
+        color: #20c997;
+        font-size: 25px;
+        margin-right: 10px;
+    }
+}

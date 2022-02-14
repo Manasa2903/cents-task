@@ -1,4 +1,12 @@
-const InputField = ({ label, value, type, className, defaultValue }) => {
+const InputField = ({
+  label,
+  value,
+  type,
+  className,
+  defaultValue,
+  onChange,
+  name,
+}) => {
   return (
     <div className={`input-field ${className}`}>
       <label className="input-label">{label}</label>
@@ -7,6 +15,8 @@ const InputField = ({ label, value, type, className, defaultValue }) => {
         value={value}
         defaultValue={defaultValue}
         className="input"
+        name={name}
+        onChange={onChange}
       />
     </div>
   );

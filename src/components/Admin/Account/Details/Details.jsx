@@ -1,26 +1,36 @@
-import Admin from "./../../Admin";
 import InputField from "./../../../Commons/InputField/InputField";
 import { BsPerson, BsBuilding, BsTelephone, BsEnvelope } from "react-icons/bs";
+import { connect } from "react-redux";
+import { changeUserDetails } from "../../../../Redux/Details/DetailsActions";
 
-const Details = () => {
+const Details = ({ userDetails, changeUserDetails }) => {
+  const changeValues = (e) => {
+    const { name, value } = e.target;
+    changeUserDetails({ [name]: value });
+  };
+  //console.log(userDetails);
+
   return (
     <div className="account-details-container">
-      <Admin />
       <div className="account-details-right-section">
         <div className="account-details">
           <BsPerson className="account-details-icon" />
           <div className="account-details-input-fields">
             <InputField
-              defaultValue="Manasa"
+              defaultValue={userDetails.name}
               type="text"
+              name="name"
               label="Name"
               className="input-container"
+              onChange={changeValues}
             />
             <InputField
-              defaultValue="WestAgile Labs"
+              defaultValue={userDetails.companyName}
               type="text"
               label="Company Name"
+              name="companyName"
               className="input-container"
+              onChange={changeValues}
             />
           </div>
         </div>
@@ -29,28 +39,36 @@ const Details = () => {
           <BsBuilding className="account-details-icon" />
           <div className="account-details-input-fields">
             <InputField
-              defaultValue="Beside NRI School"
+              defaultValue={userDetails.address}
               type="text"
               label="Address"
               className="input-container"
+              name="address"
+              onChange={changeValues}
             />
             <InputField
-              defaultValue="Tenali"
+              defaultValue={userDetails.city}
               type="text"
               label="City"
               className="input-container"
+              name="city"
+              onChange={changeValues}
             />
             <InputField
-              defaultValue="Andhra Pradesh"
+              defaultValue={userDetails.state}
+              onChange={changeValues}
               type="text"
               label="State"
               className="input-container"
+              name="state"
             />
             <InputField
-              defaultValue="522201"
+              defaultValue={userDetails.zipCode}
               type="text"
               label="Zip Code"
               className="input-container"
+              name="zipCode"
+              onChange={changeValues}
             />
           </div>
         </div>
@@ -59,10 +77,12 @@ const Details = () => {
           <BsTelephone className="account-details-icon" />
           <div className="account-details-input-fields">
             <InputField
-              defaultValue="1234567890"
+              defaultValue={userDetails.phone}
               type="text"
               label="Phone"
               className="input-container"
+              name="phone"
+              onChange={changeValues}
             />
           </div>
         </div>
@@ -71,10 +91,12 @@ const Details = () => {
           <BsEnvelope className="account-details-icon" />
           <div className="account-details-input-fields">
             <InputField
-              defaultValue="manasa.b@westagilelabs.com"
+              defaultValue={userDetails.email}
               type="text"
               label="Email"
               className="input-container"
+              name="email"
+              onChange={changeValues}
             />
           </div>
         </div>
@@ -83,4 +105,14 @@ const Details = () => {
   );
 };
 
-export default Details;
+const mapStateToProps = (state) => {
+  return { userDetails: state.details };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    changeUserDetails: (values) => dispatch(changeUserDetails(values)),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Details);
