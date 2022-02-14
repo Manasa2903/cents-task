@@ -1,4 +1,4 @@
-import { UPDATE_IS_SHOW_REGIONS } from "./RegionsTypes.js";
+import { UPDATE_IS_SHOW_REGIONS } from "./regionsTypes.js";
 
 const initialState = {
     regionsList: [

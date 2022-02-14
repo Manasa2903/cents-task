@@ -1,6 +1,6 @@
 import { MdOutlineLocationOn } from "react-icons/md";
 import Toggle from "react-toggle";
-import { updateIsShowRegions } from "../../../../Redux/Regions/RegionsActions";
+import { updateIsShowRegions } from "../../../../Redux/regions/regionsActions";
 import { connect } from "react-redux";
 
 const Regions = ({ regionsList, isShowRegions, updateIsShowRegions }) => {

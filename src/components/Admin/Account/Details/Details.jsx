@@ -1,7 +1,7 @@
-import InputField from "./../../../Commons/InputField/InputField";
+import InputField from "../../../Commons/inputField/InputField";
 import { BsPerson, BsBuilding, BsTelephone, BsEnvelope } from "react-icons/bs";
 import { connect } from "react-redux";
-import { changeUserDetails } from "../../../../Redux/Details/DetailsActions";
+import { changeUserDetails } from "../../../../Redux/details/detailsActions";
 
 const Details = ({ userDetails, changeUserDetails }) => {
   const changeValues = (e) => {

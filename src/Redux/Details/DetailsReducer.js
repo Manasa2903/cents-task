@@ -1,4 +1,4 @@
-import { SET_NEW_VALUES } from "./DetailsTypes";
+import { SET_NEW_VALUES } from "./detailsTypes";
 const initialState = {
     name: "Manasa",
     companyName: "Westagile Labs Hyderabad",

@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
-import detailsReducer from "./Details/DetailsReducer";
-import regionsReducer from "./Regions/RegionsReducer";
+import detailsReducer from "./details/detailsReducer";
+import regionsReducer from "./regions/regionsReducer";
 
 const rootReducer = combineReducers({
     details: detailsReducer,
