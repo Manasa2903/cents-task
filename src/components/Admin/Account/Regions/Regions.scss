@@ -1,4 +1,5 @@
 .regions-container {
+    height: 90vh;
     .regions-top-container {
         margin-bottom: 20px;
         display: flex;
@@ -20,12 +21,12 @@
     }
     .regions-list {
         overflow-y: auto;
-        width: 100%;
+        height: 70vh;
         .regions-list-item {
             margin-left: 100px;
             border: 1px solid #fff;
             padding: 5px;
-            width: 200px;
+            width: 300px;
             cursor: pointer;
         }
         .regions-list-item:hover {

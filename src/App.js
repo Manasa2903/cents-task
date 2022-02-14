@@ -9,6 +9,7 @@ import LeftNav from "./components/Admin/LeftNav/LeftNav";
 import store from "./store.js";
 import { Provider } from "react-redux";
 import Regions from "./components/Admin/Account/Regions/Regions";
+import Taxes from "./components/Admin/Account/Taxes/Taxes";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
                 <Route path="details" element={<Details />} />
                 <Route path="payments" element={<Payments />} />
                 <Route path="regions" element={<Regions />} />
+                <Route path="taxes" element={<Taxes />} />
               </Route>
             </Route>
           </Routes>
