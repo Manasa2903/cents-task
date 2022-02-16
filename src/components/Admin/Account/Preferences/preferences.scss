@@ -1,0 +1,9 @@
+.preferences-container {
+    padding: 30px;
+    height: 80vh;
+    overflow-y: auto;
+    .preferences-details {
+        margin-left: 40px;
+        margin-top: 15px;
+    }
+}

@@ -1,6 +1,8 @@
 //Commons
 @import "./components/Commons/InputField/input-field.scss";
 @import "./components/Commons/css/react-toggle.css";
+@import "./components/Commons/checkBox/check-box.scss";
+@import "./components/Commons/css/accountsHeader.css";
 //Components
 @import "./components/Navbar/navbar.scss";
 @import "./components/LaundromatsBottomSection/laundromats-bottom-section.scss";
@@ -16,3 +18,5 @@
 @import "./components/Admin/Account/Payments/payments.scss";
 @import "./components/Admin/Account/Regions/Regions.scss";
 @import "./components/Admin/Account/Taxes/Taxes.scss";
+@import "./components/Admin/Account/Settings/settings.scss";
+@import "./components/Admin/Account/Preferences/preferences.scss";
