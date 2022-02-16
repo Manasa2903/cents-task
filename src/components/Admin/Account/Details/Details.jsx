@@ -96,6 +96,7 @@ const Details = ({ userDetails, changeUserDetails }) => {
               id="phone"
               onChange={changeValues}
               inputClassName="input-field"
+              name="phone"
             />
           </div>
         </div>
@@ -111,6 +112,7 @@ const Details = ({ userDetails, changeUserDetails }) => {
               id="email"
               onChange={changeValues}
               inputClassName="input-field"
+              name="email"
             />
           </div>
         </div>

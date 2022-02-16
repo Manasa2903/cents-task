@@ -24,6 +24,7 @@ function App() {
             <Route path="/" element={<LaundromatsBottomSection />} />
             <Route path="/admin" element={<LeftNav />}>
               <Route path="account" element={<RightNav />}>
+                <Route index element={<Details />} />
                 <Route path="details" element={<Details />} />
                 <Route path="payments" element={<Payments />} />
                 <Route path="regions" element={<Regions />} />
