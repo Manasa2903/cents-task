@@ -27,6 +27,9 @@
             .admin-sidebar-items:hover {
                 text-decoration: underline;
             }
+            .admin-sidebar-items:focus {
+                color: #3790f4;
+            }
         }
     }
 }

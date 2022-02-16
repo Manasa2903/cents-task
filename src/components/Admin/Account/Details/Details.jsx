@@ -17,20 +17,24 @@ const Details = ({ userDetails, changeUserDetails }) => {
           <BsPerson className="account-details-icon" />
           <div className="account-details-input-fields">
             <InputField
-              defaultValue={userDetails.name}
+              defaultValue={userDetails?.name}
               type="text"
               name="name"
               label="Name"
               className="input-container"
               onChange={changeValues}
+              inputClassName="input-field"
+              id="name"
             />
             <InputField
-              defaultValue={userDetails.companyName}
+              defaultValue={userDetails?.companyName}
               type="text"
               label="Company Name"
               name="companyName"
+              id="companyName"
               className="input-container"
               onChange={changeValues}
+              inputClassName="input-field"
             />
           </div>
         </div>
@@ -39,36 +43,44 @@ const Details = ({ userDetails, changeUserDetails }) => {
           <BsBuilding className="account-details-icon" />
           <div className="account-details-input-fields">
             <InputField
-              defaultValue={userDetails.address}
+              defaultValue={userDetails?.address}
               type="text"
               label="Address"
               className="input-container"
               name="address"
+              id="address"
               onChange={changeValues}
+              inputClassName="input-field"
             />
             <InputField
-              defaultValue={userDetails.city}
+              defaultValue={userDetails?.city}
               type="text"
               label="City"
               className="input-container"
               name="city"
+              id="city"
               onChange={changeValues}
+              inputClassName="input-field"
             />
             <InputField
-              defaultValue={userDetails.state}
+              defaultValue={userDetails?.state}
               onChange={changeValues}
+              inputClassName="input-field"
               type="text"
               label="State"
               className="input-container"
               name="state"
+              id="state"
             />
             <InputField
-              defaultValue={userDetails.zipCode}
+              defaultValue={userDetails?.zipCode}
               type="text"
               label="Zip Code"
               className="input-container"
               name="zipCode"
+              id="zipCode"
               onChange={changeValues}
+              inputClassName="input-field"
             />
           </div>
         </div>
@@ -77,12 +89,13 @@ const Details = ({ userDetails, changeUserDetails }) => {
           <BsTelephone className="account-details-icon" />
           <div className="account-details-input-fields">
             <InputField
-              defaultValue={userDetails.phone}
+              defaultValue={userDetails?.phone}
               type="text"
               label="Phone"
               className="input-container"
-              name="phone"
+              id="phone"
               onChange={changeValues}
+              inputClassName="input-field"
             />
           </div>
         </div>
@@ -91,12 +104,13 @@ const Details = ({ userDetails, changeUserDetails }) => {
           <BsEnvelope className="account-details-icon" />
           <div className="account-details-input-fields">
             <InputField
-              defaultValue={userDetails.email}
+              defaultValue={userDetails?.email}
               type="text"
               label="Email"
               className="input-container"
-              name="email"
+              id="email"
               onChange={changeValues}
+              inputClassName="input-field"
             />
           </div>
         </div>
@@ -106,7 +120,7 @@ const Details = ({ userDetails, changeUserDetails }) => {
 };
 
 const mapStateToProps = (state) => {
-  return { userDetails: state.details };
+  return { userDetails: state?.details };
 };
 
 const mapDispatchToProps = (dispatch) => {

@@ -1,0 +1,47 @@
+.settings-container {
+    height: 80vh;
+    overflow-y: auto;
+    padding: 20px;
+    .settings-info-container {
+        display: flex;
+        .settings-icon {
+            font-size: 28px;
+            margin-top: 18px;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+    .settings-info-2 {
+        margin-left: 58px;
+        margin-top: 35px;
+    }
+    .settings-control-container {
+        display: flex;
+        align-items: center;
+    }
+    .settings-para {
+        margin-top: 5px;
+        font-size: 16px;
+        margin-bottom: 5px;
+        padding-right: 20px;
+    }
+    .settings-heading {
+        margin-bottom: 0;
+    }
+    .notes-add-button {
+        height: 34px;
+        margin-top: 10px;
+        margin-left: 10px;
+        border: 0;
+        border-radius: 50%;
+        color: #fff;
+        background-color: #3790f4;
+        width: 34px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .settings-small-para {
+        color: #7b7b7b;
+        font-size: 10px;
+    }
+}

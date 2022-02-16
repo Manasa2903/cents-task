@@ -5,7 +5,7 @@ const DoubleSidebar = ({ doubleNavItems, heading }) => {
     <nav className="right-nav">
       <h1 className="right-nav-heading">{heading}</h1>
       <div className="right-nav-items-container">
-        {doubleNavItems.map((eachItem) => (
+        {doubleNavItems?.map((eachItem) => (
           <Link
             to={eachItem.path}
             className="right-nav-item"

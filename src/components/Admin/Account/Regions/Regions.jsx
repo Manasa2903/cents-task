@@ -14,17 +14,19 @@ const Regions = ({ regionsList, isShowRegions, updateIsShowRegions }) => {
         <MdOutlineLocationOn className="regions-icon" />
         <p className="regions-paragraph">Regions & Districts</p>
         <Toggle
-          defaultChecked={true}
           icons={false}
+          checked={isShowRegions}
           onChange={changeToggleValue}
         />
       </div>
       <div className="regions-list">
         {isShowRegions &&
-          regionsList.map((eachRegion) => (
-            <div key={eachRegion.id} className="regions-list-item">
-              <p>{eachRegion.regionName}</p>
-              <p className="regions-district-name">{eachRegion.districtName}</p>
+          regionsList?.map((eachRegion) => (
+            <div key={eachRegion?.id} className="regions-list-item">
+              <p>{eachRegion?.regionName}</p>
+              <p className="regions-district-name">
+                {eachRegion?.districtName}
+              </p>
             </div>
           ))}
       </div>
@@ -34,8 +36,8 @@ const Regions = ({ regionsList, isShowRegions, updateIsShowRegions }) => {
 
 const mapStateToProps = (state) => {
   return {
-    regionsList: state.regions.regionsList,
-    isShowRegions: state.regions.isShowRegions,
+    regionsList: state?.regions?.regionsList,
+    isShowRegions: state?.regions?.isShowRegions,
   };
 };
 

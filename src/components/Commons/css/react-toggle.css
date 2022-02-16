@@ -3,6 +3,7 @@
     display: inline-block;
     position: relative;
     cursor: pointer;
+    margin-left: 15px;
     background-color: transparent;
     border: 0;
     padding: 0;

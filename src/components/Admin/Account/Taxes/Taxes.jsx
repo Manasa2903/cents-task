@@ -1,4 +1,4 @@
-import { MdOutlineLocationOn } from "react-icons/md";
+import { AiOutlinePercentage } from "react-icons/ai";
 import Toggle from "react-toggle";
 import { connect } from "react-redux";
 import { updateIsShowTaxes } from "./../../../../Redux/taxes/taxesActions";
@@ -11,10 +11,10 @@ const Taxes = ({ taxesList, isShowTaxes, updateIsShowTaxes }) => {
   return (
     <div className="regions-container">
       <div className="regions-top-container">
-        <MdOutlineLocationOn className="regions-icon" />
+        <AiOutlinePercentage className="regions-icon" />
         <p className="regions-paragraph">Tax Rates</p>
         <Toggle
-          defaultChecked={true}
+          checked={isShowTaxes}
           icons={false}
           onChange={changeToggleValue}
         />
