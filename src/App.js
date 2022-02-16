@@ -1,11 +1,11 @@
 import "./global.scss";
 import Navbar from "./components/Navbar/Navbar";
 import LaundromatsBottomSection from "./components/LaundromatsBottomSection/LaundromatsBottomSection";
-import RightNav from "./components/Admin/RightNav";
+import RightNav from "./components/Commons/RightNav/RightNav";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Details from "./components/Admin/Account/Details/Details";
 import Payments from "./components/Admin/Account/Payments/Payments";
-import LeftNav from "./components/Admin/LeftNav/LeftNav";
+import LeftNav from "./components/Commons/LeftNav/LeftNav";
 import store from "./store.js";
 import { Provider } from "react-redux";
 import Regions from "./components/Admin/Account/Regions/Regions";

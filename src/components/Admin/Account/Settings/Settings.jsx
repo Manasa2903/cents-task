@@ -26,7 +26,6 @@ const Settings = ({
   isServiceFee,
 }) => {
   const changeToggleValue = (e, key) => {
-    console.log({ [key]: e.target.checked });
     updateToggleValue([key], e.target.checked);
   };
 

@@ -1,0 +1,28 @@
+.admin-container {
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    .account-container {
+        margin: 30px;
+        box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
+        border-radius: 25px;
+        width: 80%;
+        padding-bottom: 15px;
+        .account-heading {
+            margin-top: 0px;
+            padding-top: 25px;
+            padding-left: 35px;
+            padding-bottom: 10px;
+            font-size: 24px;
+            font-weight: 500;
+            color: black;
+            font-family: sans-serif;
+            border-bottom: 1px solid #aaa;
+        }
+        .account-right-container {
+            overflow-y: auto;
+            overflow-x: hidden;
+            height: 70vh;
+        }
+    }
+}
